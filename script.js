@@ -1,8 +1,7 @@
 const choices = ['rock', 'paper', 'scissors'];
 //define the 3 choices of the game
-//should check position for win tie lose? 1 2 3
 function getComputerChoice() {
-    choices[Math.floor(Math.random()*choices.length)]
+    return choices[Math.floor(Math.random()*choices.length)]
 }
 //function for the computer to choose a random selection
 //currently not working, tested
