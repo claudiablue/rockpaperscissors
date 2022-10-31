@@ -28,9 +28,11 @@ function playRound(playerSelection, computerSelection){
         return "You Win"
     }
 }
-
 //creates function to play a single round of RPS
 //compare both choices, if choices equal returns tie
+console.log(computerSelection);
+console.log(playerSelection);
+//return both choices to demonstrate it is working
 console.log(playRound(playerSelection, computerSelection));
 //logs the round
 
