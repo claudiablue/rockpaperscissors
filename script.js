@@ -3,9 +3,18 @@ const choices = ['rock', 'paper', 'scissors'];
 function getComputerChoice() {
     return choices[Math.floor(Math.random()*choices.length)]
 }
-//function for the computer to choose a random selection
-//currently not working, tested
-const playerSelection = prompt("Rock, Paper, or Scissors?").toLowerCase();
+
+// Gets the player's choice. Reprompts until they choose
+// a valid option.
+function getPlayerChoice() {
+    let choice = null;
+    while (!choices.includes(choice)) {
+        choice = prompt("Rock, Paper, or Scissors?").toLowerCase();
+    }
+    return choice;
+}
+
+const playerSelection = getPlayerChoice();
 
 //prompts user to enter their choice, converts to lowercase
 //currently working
